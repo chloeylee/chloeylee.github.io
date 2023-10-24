@@ -26,6 +26,10 @@ body {
     font-size: 18px;
 }
 
+p {
+    font-family: "Metropolis";
+}
+
 h3 {
     font-size: 30px;
     font-weight: bold;
@@ -83,8 +87,8 @@ nav img {
 }
 
 #aboutMePic {
-    display: flex;
     width: 100%;
+    display: flex;
 }
 
 #blurb {
@@ -94,4 +98,10 @@ nav img {
 #blurbText {
     padding-top: 5%;
     font-family: "Metropolis";
+}
+
+/* PROJECTS */
+
+#projectsBlurb {
+    padding: 5%;
 }
