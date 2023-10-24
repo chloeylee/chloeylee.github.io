@@ -104,4 +104,16 @@ nav img {
 
 #projectsBlurb {
     padding: 5%;
+    background-color: #040430;
+    border-radius: 15px;
+}
+
+#projectHr {
+    color: #f0f0ea;
+    background-color: #040430;
+}
+
+#projectPara {
+    color: #f0f0ea;
+    background-color: #040430;
 }
