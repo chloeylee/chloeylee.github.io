@@ -103,17 +103,20 @@ nav img {
 /* PROJECTS */
 
 #projectsBlurb {
-    padding: 5%;
-    background-image: url("star-banner.jpg");
-    border-radius: 15px;
+    padding-top: 7%;
+    justify-content: center;
 }
 
 #projectHr {
-    color: #f0f0ea;
+    color: #060644;
     background-color: rgba(255, 255, 255, 0);
 }
 
 #projectPara {
-    color: #f0f0ea;
+    color: #060644;
     background-color: rgba(255, 255, 255, 0);
+}
+
+#projectsPic {
+    width: 100%;
 }
