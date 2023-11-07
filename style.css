@@ -120,3 +120,38 @@ nav img {
 #projectsPic {
     width: 100%;
 }
+
+#credits {
+    padding: 3%;
+    font-size: 12px;
+    font-family: "Metropolis";
+}
+
+#footerLinks {
+    list-style-type: none;
+}
+
+#footerLinks a {
+    color: #1b5e8f;
+}
+
+#footerLinks a:hover {
+    color: #060644;
+}
+
+hr {
+    width: 99%;
+    border: .01px solid #15154d;
+    margin-bottom: .001%;
+}
+
+.vertical-divider {
+    border-right: .1px solid #15154d;
+    height: 100%;
+}
+
+#bottomText {
+    margin-top: -10px;
+    font-size: 12px;
+    margin-left: 3%;
+}
