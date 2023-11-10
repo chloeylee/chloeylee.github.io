@@ -110,7 +110,7 @@ video {
 
 .video-container {
     width: auto;
-    height: 240px;
+    height: 300px;
     position: relative;
     overflow: hidden;
 }
