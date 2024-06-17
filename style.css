@@ -23,7 +23,7 @@ body {
     margin: 1rem;
     line-height: 1.5;
     font-family: "Moglan";
-    font-size: 18px;
+    font-size: 16px;
 }
 
 p {
@@ -97,6 +97,7 @@ nav img {
 
 #blurbText {
     padding: 3%;
+    padding-top: 7%;
     font-family: "Metropolis";
 }
 
