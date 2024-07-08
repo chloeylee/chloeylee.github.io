@@ -21,9 +21,15 @@
 body {
     background-color: #f0f0ea;
     margin: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
     line-height: 1.5;
     font-family: "Moglan";
     font-size: 16px;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
@@ -36,11 +42,16 @@ h3 {
     font-family: "Moglan";
 }
 
-.header {
+.header-wrapper {
     width: 100%;
-    position: relative;
+    border-bottom: 1px solid #060644;
+    padding-bottom: 10px;
+}
+
+.header {
+    margin: 0 auto;
+    padding: .5rem 1rem;
     background-size: cover;
-    border-radius: 15px;
     font-family: "Moglan";
 }
 
@@ -55,17 +66,26 @@ nav {
     align-items: center;
 }
 nav img {
-    width: 90px;
+    width: 60px;
+}
+#nav-title {
+    font-size: 20px;
+    font-family: "Moglan";
+    color: #060644;
+    text-decoration: none;
+
 }
 .nav-links {
     flex: 1;
     text-align: right;
+    align-items: center;
 }
 .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+    margin-top: 5px;
 }
 .nav-links ul li a {
     color: #060644;
@@ -93,6 +113,7 @@ nav img {
 
 #blurb {
     display: flex;
+    padding-top: 5%;
 }
 
 #blurbText {
@@ -102,17 +123,21 @@ nav img {
 }
 
 #featuredProjects {
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
     font-family: "Metropolis";
+    padding-top: 50%;
+}
+
+#projBox {
+    border: 1px solid black;
+    width: auto;
+    padding: 10px;
 }
 
 
 
 /* PROJECTS */
 video {
-    width: auto;
+    width: 140%;
 }
 
 .video-container {
@@ -123,8 +148,8 @@ video {
 }
 
 .hover-video {
-    width: 120%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     object-fit: cover;
     transform: scale(1);
     transition: transform 0.3s;
@@ -165,10 +190,6 @@ video::-webkit-media-controls-progress {
 
 #footerLinks {
     list-style-type: none;
-}
-
-a {
-    color: #1b5e8f;
 }
 
 #footerLinks a:hover {

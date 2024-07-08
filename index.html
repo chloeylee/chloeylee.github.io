@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    
-    <!-- jQuery library --> 
+
+    <!-- jQuery library -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -17,67 +18,89 @@
     <link rel="icon" type="image/x-icon" href="favIcon.png">
 
 </head>
+
 <body>
-    <div class="header">
-        <nav>
-            <a href="index.html">
-                <img src="logo2.png"/>
-            </a>
-            <div class="nav-links" id="navLinks">
-                <ul>
-                    <li><a href="index.html"><em>HOME</em></a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-        </nav>
+    <div class="header-wrapper">
+        <div class="header">
+            <nav>
+                <a href="index.html" id="nav-title">
+                    <img src="logo2.png" />
+                    Chloe Lee
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="index.html"><em>HOME</em></a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
     <div id="blurb" class="row">
         <div class="col-sm-4">
             <img src="aboutMePic.png" id="aboutMePic">
         </div>
         <div id="blurbText" class="col-sm-8">
-            <h3>Hi, I'm Chloe!</h3>
-            <p> I'm currently a student at Northeastern University in Boston, MA, 
-                pursuing a bachelor's degree in Computer Science and Cognitive Psychology with a minor in Experience Design.
-                I'm passionate about creating innovative solutions that bridge the gap between technology and human experience.
+            <h3>I'm Chloe, a <span class="input" /></h3>
+            <p> I'm currently a student at Northeastern University in Boston, MA, pursuing a bachelor's degree in
+                Computer Science and Cognitive Psychology with a minor in Experience Design. I'm passionate about
+                creating
+                innovative solutions that bridge the gap between technology and human experience.
             </p>
         </div>
     </div>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings: ["Front-End Developer", "UX Designer", "Game Developer"],
+            typeSpeed: 40,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true
+        })
+    </script>
 
     <div id="featureProjects">
         <h3> Featured Projects </h3>
-        <p> Kirby Reversi | Java</p>
-        <div class="col-sm-8">
-            <p>temp</p>
-        </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" id="projBox">
+            <p> Kirby Reversi | Java</p>
             <video class="hover-video" src="kirbyGameplay.mov" preload="auto" muted></video>
         </div>
     </div>
 
-    
+
     <!-- footer -->
     <br><br>
     <br><br>
-    <center><hr></center>
+    <center>
+        <hr>
+    </center>
     <div>
         <div id="credits" class="row">
             <div class="vertical-divider col-lg-6">
-                <center><h6>Where to next?</h6></center>
-                <center><ul id="footerLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="philanthropy.html">Philanthropy</a></li>
-                </ul></center>
+                <center>
+                    <h6>Where to next?</h6>
+                </center>
+                <center>
+                    <ul id="footerLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </center>
             </div>
             <div class="col-sm-6">
-                <center><h6>Connect with me!</h6></center>
-                <center><ul id="footerLinks">
-                    <li><a href="https://www.linkedin.com/in/chloeylee112">LinkedIn</a></li>
-                    <li><a href="https://github.com/chloeylee">GitHub</a></li>
-                    <li><a href="mailto: chloey.lee112@gmail.com">Email</a></li>
-                </ul>
+                <center>
+                    <h6>Connect with me!</h6>
+                </center>
+                <center>
+                    <ul id="footerLinks">
+                        <li><a href="https://www.linkedin.com/in/chloeylee112">LinkedIn</a></li>
+                        <li><a href="https://github.com/chloeylee">GitHub</a></li>
+                        <li><a href="mailto: chloey.lee112@gmail.com">Email</a></li>
+                    </ul>
             </div>
         </div>
         <div class="row" id="bottomText">
@@ -91,4 +114,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
