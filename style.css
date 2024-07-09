@@ -176,12 +176,12 @@ nav img {
     background-color: #060644;
     color: #f0f0ea;
     padding: .5rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #arrow:hover {
     background-color: pink;
     color: #060644;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .projects-content {
