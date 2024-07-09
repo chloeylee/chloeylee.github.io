@@ -271,7 +271,7 @@ video {
     overflow: hidden;
 }
 
-.hover-video {
+.hover-video, .autoplay-video {
     object-fit: cover;
     transform: scale(1);
     transition: transform 0.3s;
