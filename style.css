@@ -10,8 +10,7 @@
 
 @font-face {
     font-family: "Moglan";
-    src: url("Moglan_DEMO.ttf")
-    format("truetype");
+    src: url("Moglan_DEMO.ttf") format("truetype");
 }
 
 @font-face {
@@ -69,9 +68,11 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 nav img {
     width: 60px;
 }
+
 #nav-title {
     font-size: 20px;
     font-family: "Moglan";
@@ -79,11 +80,13 @@ nav img {
     text-decoration: none;
 
 }
+
 .nav-links {
     flex: 1;
     text-align: right;
     align-items: center;
 }
+
 .nav-links ul li {
     list-style: none;
     display: inline-block;
@@ -91,11 +94,13 @@ nav img {
     position: relative;
     margin-top: 5px;
 }
+
 .nav-links ul li a {
     color: #060644;
     text-decoration: none;
     font-size: 15px;
 }
+
 .nav-links ul li::after {
     content: "";
     width: 0%;
@@ -109,6 +114,31 @@ nav img {
 .nav-links ul li:hover::after {
     width: 100%;
 }
+
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 600px) {
+    #nav-title {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        text-align: right;
+    }
+
+    .nav-links ul li {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+    #nav-title {
+        flex-direction: row;
+    }
+}
+
 
 /* home page styling */
 
@@ -252,7 +282,8 @@ nav img {
     background-color: transparent;
 }
 
-.projects-link:hover, .projects-link:hover i {
+.projects-link:hover,
+.projects-link:hover i {
     color: pink;
     text-decoration: none;
 
@@ -271,7 +302,8 @@ video {
     overflow: hidden;
 }
 
-.hover-video, .autoplay-video {
+.hover-video,
+.autoplay-video {
     object-fit: cover;
     transform: scale(1);
     transition: transform 0.3s;
