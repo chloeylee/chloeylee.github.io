@@ -190,6 +190,11 @@ nav img {
     object-fit: cover;
 }
 
+.home-proj {
+    width: 400px;
+    height: 400px;
+}
+
 .proj-small-btn {
     position: absolute;
     right: .5rem;
