@@ -143,22 +143,24 @@ nav img {
 /* home page styling */
 
 #aboutMePic {
-    display: flex;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    max-width: 100%;
+    height: auto;
 }
 
 #blurb {
     display: flex;
-    padding-top: 5%;
 }
 
 #blurbText {
-    padding: 3%;
-    padding-top: 7%;
     font-family: "Metropolis";
-    height: 400px;
+    height: 300px;
+    padding-top: 10%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .projects {
@@ -191,8 +193,7 @@ nav img {
 }
 
 .home-proj {
-    width: 400px;
-    height: 400px;
+    width: 300px;
 }
 
 .proj-small-btn {
@@ -341,7 +342,7 @@ video::-webkit-media-controls-progress {
     width: 70%;
 }
 
-#credits {
+#footer {
     padding: 3%;
     font-size: 12px;
     font-family: "Metropolis";
