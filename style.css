@@ -192,7 +192,8 @@ nav img {
 }
 
 .home-proj {
-    width: 300px;
+    height: 380px;
+    object-fit: cover;
 }
 
 .proj-small-btn {
