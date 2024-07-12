@@ -181,7 +181,6 @@ nav img {
 
 .projects-video {
     width: 100%;
-    /* overflow: hidden; */
     position: relative;
     margin-bottom: .75rem;
     background-color: transparent;
@@ -368,7 +367,6 @@ hr {
 }
 
 #bottomText {
-    margin-top: -10px;
     font-size: 12px;
     margin-left: 3%;
 }
