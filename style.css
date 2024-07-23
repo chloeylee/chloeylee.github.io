@@ -85,6 +85,12 @@ nav img {
     flex: 1;
     text-align: right;
     align-items: center;
+    width: 100%;
+}
+
+.nav-links ul {
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links ul li {
@@ -99,9 +105,10 @@ nav img {
     color: #060644;
     text-decoration: none;
     font-size: 15px;
+    display: inline-block;
 }
 
-.nav-links ul li::after {
+.nav-links ul li a::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -111,7 +118,7 @@ nav img {
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after {
+.nav-links ul li a:hover::after {
     width: 100%;
 }
 
@@ -131,11 +138,34 @@ nav img {
         display: block;
         margin-top: 10px;
     }
+
+
+    .nav-links ul li a {
+        display: inline-block;
+    }
+
+    .nav-links ul li a::after {
+        width: 0;
+    }
+
+    .nav-links ul li a:hover::after {
+        width: 100%;
+    }
+    
 }
 
 @media (min-width: 600px) {
     #nav-title {
         flex-direction: row;
+    }
+    #credits {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #credits .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 }
 
@@ -166,6 +196,7 @@ nav img {
 .projects {
     background-color: #f0f0ea;
     transition: background-color 0.5s;
+    padding-top: 1rem;
 }
 
 .projects-container {
