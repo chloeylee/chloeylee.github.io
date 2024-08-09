@@ -151,18 +151,20 @@ nav img {
     .nav-links ul li a:hover::after {
         width: 100%;
     }
-    
+
 }
 
 @media (min-width: 600px) {
     #nav-title {
         flex-direction: row;
     }
+
     #credits {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     #credits .col-sm-6 {
         flex: 0 0 50%;
         max-width: 50%;
@@ -400,4 +402,59 @@ hr {
 #bottomText {
     font-size: 12px;
     margin-left: 3%;
+}
+
+
+/* About Me Page */
+#aboutHeaderImg {
+    width: 50%;
+}
+
+.aboutHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.container .list .num {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    transition: 0.25s;
+    height: 100px;
+}
+
+.container .list .num i {
+    font-size: 4rem;
+    color: #000;
+    margin-right: 1rem;
+    opacity: 0.05;
+    transition: 0.25s;
+    width: 2rem;
+}
+
+.container .list .num h3 {
+    position: relative;
+    left: -1rem;
+    color: #3d3d3d;
+    font-size: 2rem;
+    transition: 0.25s;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: transparent;
+}
+
+.container .list .num:hover {
+    background-color: #fafafa;
+    cursor: default;
+}
+
+.container .list .num:hover:before {
+    opacity: 0.2;
+}
+
+.container .list .num:hover h3 {
+    left: 1.25rem;
+    background-color: transparent;
 }
