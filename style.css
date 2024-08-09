@@ -185,7 +185,6 @@ nav img {
 #blurbText {
     font-family: "Metropolis";
     height: 300px;
-    padding-top: 10%;
 }
 
 .text-container {
@@ -196,7 +195,7 @@ nav img {
 .projects {
     background-color: #f0f0ea;
     transition: background-color 0.5s;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .projects-container {
