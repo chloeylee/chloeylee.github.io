@@ -324,7 +324,6 @@ nav img {
 .projects-link:hover i {
     color: pink;
     text-decoration: none;
-
 }
 
 
@@ -417,6 +416,12 @@ hr {
     padding-top: 5%;
 }
 
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .container .list .num {
     padding: 0.5rem;
     display: flex;
@@ -457,4 +462,110 @@ hr {
 .container .list .num:hover h3 {
     left: 1.25rem;
     background-color: transparent;
+}
+
+.aboutInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+}
+
+.text {
+    color: #333;
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+.subText {
+    color: #777;
+    font-style: italic;
+}
+
+.resumeDownload {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+#downloadBtn {
+    background-color: #060644;
+    color: #f0f0ea;
+    align-items: center;
+    padding: .5rem;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Metropolis";
+    margin-left: 3rem;
+}
+
+#downloadBtn:hover {
+    background-color: pink;
+    color: #060644;
+}
+
+.skills-wrapper {
+    padding-left: 2rem;
+    font-family: "Metropolis";
+}
+
+.skills-wrapper .bar {
+    padding-bottom: 1rem;
+}
+
+.skills-wrapper .bar .info {
+    padding-bottom: .5rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-wrapper .bar .progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-wrapper .bar .progress-bar span {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    transform: scale(0);
+    background-color: pink;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scale(1);
+    }
+
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.skills-wrapper .bar .progress-bar span.java {
+    width: 90%;
+}
+
+.skills-wrapper .bar .progress-bar span.html {
+    width: 90%;
+}
+
+
+.skills-wrapper .bar .progress-bar span.typescript {
+    width: 70%;
+}
+
+.skills-wrapper .bar .progress-bar span.sql {
+    width: 50%;
 }
