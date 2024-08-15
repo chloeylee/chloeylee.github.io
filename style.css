@@ -423,7 +423,6 @@ hr {
 }
 
 .container .list .num {
-    padding: 0.5rem;
     display: flex;
     align-items: center;
     transition: 0.25s;
@@ -486,6 +485,7 @@ hr {
     display: flex;
     align-items: center;
     padding-top: 1.5rem;
+    padding-left: 1rem;
 }
 
 #downloadBtn {
