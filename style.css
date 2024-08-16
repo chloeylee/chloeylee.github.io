@@ -596,5 +596,10 @@ hr {
     height: 100%;
     min-width: 100%;
     position: relative; 
-    left: 0; 
+}
+
+#sugarsprint {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
