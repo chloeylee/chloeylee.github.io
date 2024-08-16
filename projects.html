@@ -39,29 +39,134 @@
         </div>
     </div>
 
-    <div class="row">
-        <h3>Projects</h3>
+    <div class="title-box">
+        <h3 class="aboutHeader">Projects</h3>
     </div>
 
-    <div class="row">
-        <div class="col-sm-6">
-            <p>Solitaire Klondike | Java</p>
-            <div class="video-container">
-                <video class="hover-video" src="klondikePlaythru.mov" preload="auto" muted></video>
+    <div class="reactive-header">
+        <div class="list">
+            <!-- coding projects -->
+            <div class="num">
+                <i class="ri-file-code-fill"></i>
+                <h3>Coding Portfolio</h3>
             </div>
-            <a href="https://github.com/chloeylee/Klondike-Solitaire">Code</a>
         </div>
-        <div class="col-sm-6">
-            <p>Herbalist Homebrewing | C#, Unity</p>
-            <div class="video-container">
-                <video class="hover-video" src="PotionGameTrailer 1.mov" preload="auto" muted></video>
+
+        <section class="projects" id="projects">
+            <div class="row">
+                <!-- KIRBY PROJ -->
+                <div class="projects-container col-sm-4">
+                    <div class="projects-video">
+                        <video class="hover-video home-proj autoplay-video" src="kirbyCropped.mov" preload="auto" muted
+                            playsinline></video>
+                        <a href="projects.html" class="proj-small-btn">
+                            <i id="arrow" class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="projects-content">
+                        <i id="icon" class="ri-terminal-line"></i>
+                        <h3 class="projects-subtitle"> java app</h3>
+                        <h2 class="projects-title">Kirby Reversi</h2>
+                        <p class="projects-desc">a hexagonal and square Reversi game with an aesthetically pleasing
+                            Kirby
+                            theme</p>
+                    </div>
+                    <div class="projects-buttons">
+                        <a href="https://github.com/chloeylee/Reversi.git" class="projects-link" target="_blank">
+                            <i class="ri-github-fill"> code</i>
+                        </a>
+                        <a href="#" class="projects-link" target="_blank">
+                            <i class="ri-file-download-line"> download</i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- QUICKCLASS PROJ -->
+                <div class="projects-container col-sm-4">
+                    <div class="projects-video">
+                        <video class="hover-video home-proj autoplay-video" src="quickclassCropped.mp4" preload="auto"
+                            muted playsinline></video>
+                        <a href="projects.html" class="proj-small-btn">
+                            <i id="arrow" class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="projects-content">
+                        <i id="icon" class="ri-terminal-line"></i>
+                        <h3 class="projects-subtitle"> react native app</h3>
+                        <h2 class="projects-title">QuickClass</h2>
+                        <p class="projects-desc"> using short-form text and videos to apply modern, evolving media
+                            consumption trends to a classroom environment</p>
+                    </div>
+                    <div class="projects-buttons">
+                        <a href="https://chiselle.app/" class="projects-link" target="_blank">
+                            <i class="ri-links-line"> website</i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- POTION GAME PROJ -->
+                <div class="projects-container col-sm-4">
+                    <div class="projects-video">
+                        <video class="hover-video home-proj autoplay-video" src="herbalistCropped.mov" preload="auto"
+                            muted playsinline></video>
+                        <a href="projects.html" class="proj-small-btn">
+                            <i id="arrow" class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="projects-content">
+                        <i id="icon" class="ri-terminal-line"></i>
+                        <h3 class="projects-subtitle"> unity 3d</h3>
+                        <h2 class="projects-title">Herbalist Homebrewing</h2>
+                        <p class="projects-desc">a Unity/C# first-person simulation game revolving around exploring,
+                            creating potions, and completing quests for local villagers</p>
+                    </div>
+                    <div class="projects-buttons">
+                        <a href="https://github.com/opbb/PotionGame.git" class="projects-link" target="_blank">
+                            <i class="ri-github-fill"> code</i>
+                        </a>
+                        <a href="https://play.unity.com/en/games/5a811a03-d17f-418c-a8a5-417ffbef7770/webgl-builds"
+                            class="projects-link" target="_blank">
+                            <i class="ri-gamepad-line"> play</i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <a href="https://github.com/opbb/PotionGame">Code</a>
-            <a href="https://play.unity.com/mg/other/webgl-builds-349036">Play Now!</a>
+
+            <div class="row">
+                <!-- KLONDIKE PROJ -->
+                <div class="projects-container col-sm-4">
+                    <div class="projects-video">
+                        <video id="klondike" class="hover-video home-proj autoplay-video"
+                            src="klondikePlaythru - CROP.mp4" preload="auto" muted playsinline></video>
+                        <a href="projects.html" class="proj-small-btn">
+                            <i id="arrow" class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                    <div class="projects-content">
+                        <i id="icon" class="ri-terminal-line"></i>
+                        <h3 class="projects-subtitle">java terminal game</h3>
+                        <h2 class="projects-title">Klondike Solitaire</h2>
+                        <p class="projects-desc">a java game that allows the user to play Klondike Solitaire through a
+                            series of commands in the terminal
+                        </p>
+                    </div>
+                    <div class="projects-buttons">
+                        <a href="https://github.com/chloeylee/Klondike-Solitaire" class="projects-link" target="_blank">
+                            <i class="ri-github-fill"> code</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="list">
+            <!-- design projects -->
+            <div class="num">
+                <i class="ri-palette-fill"></i>
+                <h3>Design Portfolio</h3>
+            </div>
         </div>
     </div>
-
-
 
     <!-- footer -->
     <br><br>

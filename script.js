@@ -1,4 +1,4 @@
-// project video on hover
+// project video on hover on desktop/laptops
 
 document.addEventListener('DOMContentLoaded', function () {
   var hoverVideos = document.querySelectorAll('.hover-video');
@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// on mobile, video should autoplay when the video is in view
 document.addEventListener('DOMContentLoaded', function () {
   function isMobile() {
     return /Mobi|Android/i.test(navigator.userAgent);

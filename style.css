@@ -197,10 +197,10 @@ nav img {
 .projects {
     background-color: #f0f0ea;
     transition: background-color 0.5s;
-    padding-top: 2rem;
 }
 
 .projects-container {
+    align-items: stretch;
     row-gap: 2rem;
     padding: 1rem 1rem 2rem;
     transition: background-color 0.5s;
@@ -212,10 +212,13 @@ nav img {
 }
 
 .projects-video {
+    flex: 1;
+    display: flex;
     width: 100%;
     position: relative;
     margin-bottom: .75rem;
     background-color: transparent;
+    aspect-ratio: 1 / 1;
 }
 
 .projects-video video {
@@ -266,6 +269,7 @@ nav img {
     background-color: transparent;
     font-weight: lighter;
     font-family: 'Metropolis';
+    padding-top: 1rem;
 }
 
 .projects-subtitle::after {
@@ -337,6 +341,12 @@ video {
     height: 400px;
     position: relative;
     overflow: hidden;
+}
+
+.hover-video {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .hover-video,
@@ -416,20 +426,20 @@ hr {
     padding-top: 5%;
 }
 
-.container {
+.reactive-header {
     width: 100%;
     padding: 0;
     margin: 0;
 }
 
-.container .list .num {
+.reactive-header .list .num {
     display: flex;
     align-items: center;
     transition: 0.25s;
     height: 100px;
 }
 
-.container .list .num i {
+.reactive-header .list .num i {
     font-size: 4rem;
     color: #000;
     margin-right: 1rem;
@@ -438,7 +448,7 @@ hr {
     width: 2rem;
 }
 
-.container .list .num h3 {
+.reactive-header .list .num h3 {
     position: relative;
     left: -1rem;
     color: #3d3d3d;
@@ -449,16 +459,16 @@ hr {
     background-color: transparent;
 }
 
-.container .list .num:hover {
+.reactive-header .list .num:hover {
     background-color: #fafafa;
     cursor: default;
 }
 
-.container .list .num:hover:before {
+.reactive-header .list .num:hover:before {
     opacity: 0.2;
 }
 
-.container .list .num:hover h3 {
+.reactive-header .list .num:hover h3 {
     left: 1.25rem;
     background-color: transparent;
 }
@@ -479,6 +489,7 @@ hr {
 .subText {
     color: #777;
     font-style: italic;
+    text-align: right;
 }
 
 .resumeDownload {
@@ -568,4 +579,22 @@ hr {
 
 .skills-wrapper .bar .progress-bar span.sql {
     width: 50%;
+}
+
+
+/* PROJECTS PAGE */
+.projects-video {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.hover-video {
+    width: auto;
+    min-width: 0;
+    height: 100%;
+    min-width: 100%;
+    position: relative; 
+    left: 0; 
 }
