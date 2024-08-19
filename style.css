@@ -624,3 +624,6 @@ hr {
     display: block;
 }
 
+#top-header {
+    padding-top: 1rem;
+}

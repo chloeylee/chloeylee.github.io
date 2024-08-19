@@ -44,26 +44,30 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//scrollable image gallery for project page
-const imageContainer = document.querySelector('.image-container');
-const scrollableImages = document.querySelector('.scrollable-images');
+// Select all image containers and scrollable image elements
+const imageContainers = document.querySelectorAll('.image-container');
+const scrollableImagesList = document.querySelectorAll('.scrollable-images');
 
-// Pre-calculate the translation value to avoid recalculating during hover
-let containerHeight = imageContainer.offsetHeight;
-let imagesHeight = scrollableImages.scrollHeight;
-let translateValue = containerHeight - imagesHeight;
+imageContainers.forEach((imageContainer, index) => {
+    const scrollableImages = scrollableImagesList[index];
 
-imageContainer.addEventListener('mouseover', () => {
-    scrollableImages.style.transform = `translateY(${translateValue}px)`;
-});
+    // Pre-calculate the translation value to avoid recalculating during hover
+    let containerHeight = imageContainer.offsetHeight;
+    let imagesHeight = scrollableImages.scrollHeight;
+    let translateValue = containerHeight - imagesHeight;
 
-imageContainer.addEventListener('mouseout', () => {
-    scrollableImages.style.transform = `translateY(0)`;
-});
+    imageContainer.addEventListener('mouseover', () => {
+        scrollableImages.style.transform = `translateY(${translateValue}px)`;
+    });
 
-// Update values on window resize for responsiveness
-window.addEventListener('resize', () => {
-    containerHeight = imageContainer.offsetHeight;
-    imagesHeight = scrollableImages.scrollHeight;
-    translateValue = containerHeight - imagesHeight;
+    imageContainer.addEventListener('mouseout', () => {
+        scrollableImages.style.transform = `translateY(0)`;
+    });
+
+    // Update values on window resize for responsiveness
+    window.addEventListener('resize', () => {
+        containerHeight = imageContainer.offsetHeight;
+        imagesHeight = scrollableImages.scrollHeight;
+        translateValue = containerHeight - imagesHeight;
+    });
 });
