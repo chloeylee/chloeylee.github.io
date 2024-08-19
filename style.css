@@ -603,3 +603,24 @@ hr {
     justify-content: center;
     align-items: center; 
 }
+
+/* design portfolio styling */
+.image-container {
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1 / 1;
+}
+
+/* Scrollable image list */
+.scrollable-images {
+    display: flex;
+    flex-direction: column;
+    transition: transform 3.5s ease;
+}
+
+.scrollable-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+

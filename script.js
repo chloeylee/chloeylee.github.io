@@ -42,3 +42,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+
+//scrollable image gallery for project page
+const imageContainer = document.querySelector('.image-container');
+const scrollableImages = document.querySelector('.scrollable-images');
+
+// Pre-calculate the translation value to avoid recalculating during hover
+let containerHeight = imageContainer.offsetHeight;
+let imagesHeight = scrollableImages.scrollHeight;
+let translateValue = containerHeight - imagesHeight;
+
+imageContainer.addEventListener('mouseover', () => {
+    scrollableImages.style.transform = `translateY(${translateValue}px)`;
+});
+
+imageContainer.addEventListener('mouseout', () => {
+    scrollableImages.style.transform = `translateY(0)`;
+});
+
+// Update values on window resize for responsiveness
+window.addEventListener('resize', () => {
+    containerHeight = imageContainer.offsetHeight;
+    imagesHeight = scrollableImages.scrollHeight;
+    translateValue = containerHeight - imagesHeight;
+});
