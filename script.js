@@ -74,31 +74,42 @@ imageContainers.forEach((imageContainer, index) => {
 
 
 // modal js
-// Get the modal
-const modal = document.getElementById('myModal');
+document.addEventListener('DOMContentLoaded', () => {
+  // Function to open modal
+  const openModal = (modalId) => {
+    document.getElementById(modalId).style.display = 'block';
+  };
 
-// Get the button that opens the modal
-const openModalBtn = document.getElementById('openModalBtn');
+  // Function to close modal
+  const closeModal = (modalId) => {
+    document.getElementById(modalId).style.display = 'none';
+  };
 
-// Get the <span> element that closes the modal
-const closeBtn = document.querySelector('.close');
+  // Add event listeners to open modal buttons
+  document.querySelectorAll('.open-modal-btn').forEach(button => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+      const modalId = button.getAttribute('data-modal');
+      openModal(modalId);
+    });
+  });
 
-// When the user clicks the button, open the modal
-openModalBtn.onclick = function () {
-  modal.style.display = 'block';
-}
+  // Add event listeners to close buttons
+  document.querySelectorAll('.close-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const modalId = button.getAttribute('data-modal');
+      closeModal(modalId);
+    });
+  });
 
-// When the user clicks on <span> (x), close the modal
-closeBtn.onclick = function () {
-  modal.style.display = 'none';
-}
+  // Close modal if user clicks outside of it
+  window.addEventListener('click', (event) => {
+    if (event.target.classList.contains('modal')) {
+      closeModal(event.target.id);
+    }
+  });
+});
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-}
 
 // modal slideshow
 
