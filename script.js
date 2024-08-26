@@ -72,70 +72,33 @@ imageContainers.forEach((imageContainer, index) => {
   });
 });
 
-
-// modal js
-document.addEventListener('DOMContentLoaded', () => {
-  // Function to open modal
-  const openModal = (modalId) => {
-    document.getElementById(modalId).style.display = 'block';
-  };
-
-  // Function to close modal
-  const closeModal = (modalId) => {
-    document.getElementById(modalId).style.display = 'none';
-  };
-
-  // Add event listeners to open modal buttons
-  document.querySelectorAll('.open-modal-btn').forEach(button => {
-    button.addEventListener('click', (event) => {
-      event.preventDefault();
-      const modalId = button.getAttribute('data-modal');
-      openModal(modalId);
-    });
-  });
-
-  // Add event listeners to close buttons
-  document.querySelectorAll('.close-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const modalId = button.getAttribute('data-modal');
-      closeModal(modalId);
-    });
-  });
-
-  // Close modal if user clicks outside of it
-  window.addEventListener('click', (event) => {
-    if (event.target.classList.contains('modal')) {
-      closeModal(event.target.id);
-    }
-  });
-});
+// images within modal
+// function tabGallery(imgs) {
+//   // Get the expanded image
+//   var expandImg = document.getElementById("expandedImg");
+//   // Get the image text
+//   var imgText = document.getElementById("imgtext");
+//   // Use the same src in the expanded image as the image being clicked on from the grid
+//   expandImg.src = imgs.src;
+//   // Use the value of the alt attribute of the clickable image as text inside the expanded image
+//   imgText.innerHTML = imgs.alt;
+//   // Show the container element (hidden with CSS)
+//   expandImg.parentElement.style.display = "block";
+// } 
 
 
-// modal slideshow
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function tabGallery(imgElement, galleryId) {
+  // Get the gallery container by its ID
+  var gallery = document.getElementById(galleryId);
+  
+  // Get the expanded image and text elements within this gallery
+  var expandImg = gallery.querySelector("#expandedImg");
+  
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgElement.src;
+  
+  
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-} 
