@@ -620,6 +620,7 @@ hr {
 .scrollable-images {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     transition: transform 3.5s ease;
 }
 
