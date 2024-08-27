@@ -700,9 +700,8 @@ hr {
 
 /* The columns */
 .img-column {
-    flex: 1 1 25%; /* Flex-grow, flex-shrink, and basis for responsive columns */
+    flex: 1 1 25%;
     padding: 10px;
-    box-sizing: border-box; /* Ensure padding is included in the column's width */
 }
 
 /* Style the images inside the grid */
@@ -724,12 +723,20 @@ hr {
     clear: both;
 }
 
-/* The expanding image container (positioning is needed to position the close button and the text) */
+/* Base styles for the container (for smaller screens) */
 .container {
     position: relative;
     display: none;
-    width: 40%;
+    width: 100%;
 }
+
+/* Styles for larger screens (e.g., full laptop screens) */
+@media (min-width: 1024px) {
+    .container {
+        width: 50%;
+    }
+}
+
 
 /* Closable button inside the image */
 .closebtn {
