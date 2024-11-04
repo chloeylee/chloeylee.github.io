@@ -105,19 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-// function tabGallery(imgElement, galleryId) {
-//   // Get the gallery container by its ID
-//   var gallery = document.getElementById(galleryId);
-
-//   // Get the expanded image and text elements within this gallery
-//   var expandImg = gallery.querySelector("#expandedImg");
-
-//   // Use the same src in the expanded image as the image being clicked on from the grid
-//   expandImg.src = imgElement.src;
-
-
-//   // Show the container element (hidden with CSS)
-//   expandImg.parentElement.style.display = "block";
-// }
-
+// about me accordian functionality
+document.querySelectorAll('.aboutInner').forEach((aboutInner) => {
+  aboutInner.addEventListener('click', () => {
+    const jobDesc = aboutInner.nextElementSibling;
+    jobDesc.classList.toggle('show');
+  });
+});

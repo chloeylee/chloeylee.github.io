@@ -482,6 +482,12 @@ hr {
     align-items: center;
     justify-content: space-between;
     padding-left: 2rem;
+    transition: color 0.5s ease-in-out;
+}
+
+#accordian:hover .text {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px pink;
+    cursor: pointer;
 }
 
 .text {
@@ -586,6 +592,16 @@ hr {
     width: 50%;
 }
 
+.jobDesc {
+    padding-left: 3rem;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.jobDesc.show {
+    max-height: 100%;
+}
 
 /* PROJECTS PAGE */
 .projects-video {
@@ -694,8 +710,10 @@ hr {
 /* Container for the grid */
 .img-row {
     display: flex;
-    justify-content: center; /* Center columns horizontally */
-    flex-wrap: wrap; /* Ensure columns wrap on smaller screens */
+    justify-content: center;
+    /* Center columns horizontally */
+    flex-wrap: wrap;
+    /* Ensure columns wrap on smaller screens */
 }
 
 /* The columns */
