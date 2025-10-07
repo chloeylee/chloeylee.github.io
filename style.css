@@ -576,7 +576,7 @@ hr {
 
 
 .skills-wrapper .bar .progress-bar span.java {
-    width: 90%;
+    width: 80%;
 }
 
 .skills-wrapper .bar .progress-bar span.html {
@@ -589,7 +589,11 @@ hr {
 }
 
 .skills-wrapper .bar .progress-bar span.sql {
-    width: 50%;
+    width: 40%;
+}
+
+.skills-wrapper .bar .progress-bar span.pm {
+    width: 60%;
 }
 
 .jobDesc {
